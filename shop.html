@@ -1,0 +1,341 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Free Snow Bootstrap Website Template | Shop :: w3layouts</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+     </script>
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+				 <div class="header-left">
+					 <div class="logo">
+						<a href="index.html"><img height="60 px" src="images/pero.png" alt=""/></a>
+					 </div>
+					 <div class="menu">
+						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+						    <ul class="nav" id="nav">
+						    	<li><a href="shop.html">Productos</a></li>
+						    	<li><a href="contact.html">Contaco</a></li>
+								<li><a href="login.html">Ingresa/Registrate</a></li>
+								<li><a href="team.html">Nosotros</a></li>								
+								<div class="clear"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				    </div>							
+	    		    <div class="clear"></div>
+	    	    </div>
+	            <div class="header_right">
+	    		  <!-- start search-->
+				  <div class="search-box">
+							<div id="sb-search" class="sb-search">
+								<form>
+									<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+									<input class="sb-search-submit" type="submit" value="">
+									<span class="sb-icon-search"> </span>
+								</form>
+							</div>
+						</div>
+						<!----search-scripts---->
+						<script src="js/classie.js"></script>
+						<script src="js/uisearch.js"></script>
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>
+				    <ul class="icon1 sub-icon1 profile_img">
+					 <li><a class="active-icon c1" href="#"> </a>
+						<ul class="sub-icon1 list">
+							<div class="table-responsive">
+								<table class="table table-shopping">
+								  <thead>
+									<tr>
+										<th class="text-center"></th>
+										<th>Producto</th>
+										<th class="text-right">Price</th>
+										<th class="text-right">Cantidad</th>
+										<th class="text-right">descuento</th>
+										<th></th>
+									</tr>
+								  </thead>
+								  <tbody id="carrito_compras">
+									<tr>
+										<td>
+											<div class="img-container">
+												<img src="images/0806054634_oven_baked_SMALL_BREED_CHICKEN.jpg" alt="...">
+											</div>
+										</td>
+										<td class="td-name">
+											<a href="single.html">Spring Jacket</a>
+											<br><small>by Dolce&amp;Gabbana</small>
+										</td>
+										<td class="td-number">
+											$<span id="total">7890</span>
+										</td>
+										<td class="td-number">
+											1
+											<div class="btn-group">
+												<button class="btn btn-info btn-sm"> <i class="nc-icon nc-simple-delete"></i> </button>
+												<button class="btn btn-info btn-sm"> <i class="nc-icon nc-simple-add"></i> </button>
+											</div>
+										</td>
+										<td class="td-number">
+											$<span id="total">7890</span>
+										</td>
+										<td class="td-actions">
+											<button type="button" rel="tooltip" data-placement="left" title="Remove item" id="boton-vaciar" class="btn btn-round btn-icon btn-neutral">
+												<i class="nc-icon nc-simple-remove"></i>
+											</button>
+										</td>
+									</tr>
+								  </tbody>
+								  <tfoot>
+								  </tfoot>
+				
+								</table>
+							  </div>
+						</ul>
+					 </li>
+				   </ul>
+		        <div class="clear"></div>
+	       </div>
+	      </div>
+		 </div>
+	    </div>
+	  </div>
+     <div class="main">
+		<div class="row pt-5">
+            <h3 class="text-center pb-5 pt-5 h1">Lo mas vendido</h3>
+        </div>
+      <div class="shop_top">
+		<div class="container">
+			<div class="row pt-5">
+				<h4 class="text-center pb-5 pt-5 h4"><a href="shop.html"><h4 class="m_2">Todo <a> - </a>
+					<a href="perros.html">Perros</a><a> - </a>
+					<a href="gatos.html">Gatos</a></h4>
+				</a></h4>
+			</div>
+			<div class="row shop_box-top " id="items">
+			</div>
+		 </div>
+	   </div>
+	  </div>
+	  <div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<ul class="footer_box">
+						<h4>Productos</h4>
+						<li><a href="perros.html">Alimentos y accesorios para perros</a></li>
+						<li><a href="gatos.html">Alimentos y accesorios para gatos</a></li>
+						<li><a href="shop.html">Accesorios y juguetes para mascotas</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="footer_box">
+						<h4>Nosotros</h4>
+						<li><a href="team.html">Quienes Somos</a></li>
+						<li><a href="catalogo.xlsx">Descarga de catalogo</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="footer_box">
+						<h4>Contaco</h4>
+						<li><a href="contact.html">Contactanos</a></li>
+						<li><a href="experiance.html">Politicas de devolucion</a></li>
+						<li><a href="login.html">Donaciones</a></li>
+						<li><a href="Warranty.html">Garantia de los productos</a></li>							
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="footer_box">
+						<h4>Newsletter</h4>
+						<div class="footer_search">
+						   <form>
+							<input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}">
+							<input type="submit" value="Go">
+						   </form>
+						</div>
+							<ul class="social">	
+							  <li class="facebook"><a href="#"><span> </span></a></li>
+							  <li class="twitter"><a href="#"><span> </span></a></li>
+							  <li class="instagram"><a href="#"><span> </span></a></li>	
+							  <li class="pinterest"><a href="#"><span> </span></a></li>	
+							  <li class="youtube"><a href="#"><span> </span></a></li>										  				
+						    </ul>
+		   					
+						</ul>
+					</div>
+				</div>
+				<div class="row footer_bottom">
+				    <div class="copy">
+			           <p>© 2014 Template by <a href="http://w3layouts.com" target="_blank">w3layouts</a></p>
+		            </div>
+					  <dl id="sample" class="dropdown">
+				        <dt><a href="#"><span>Change Region</span></a></dt>
+				        <dd>
+				            <ul>
+				                <li><a href="#">Australia<img class="flag" src="images/as.png" alt="" /><span class="value">AS</span></a></li>
+				                <li><a href="#">Sri Lanka<img class="flag" src="images/srl.png" alt="" /><span class="value">SL</span></a></li>
+				                <li><a href="#">Newziland<img class="flag" src="images/nz.png" alt="" /><span class="value">NZ</span></a></li>
+				                <li><a href="#">Pakistan<img class="flag" src="images/pk.png" alt="" /><span class="value">Pk</span></a></li>
+				                <li><a href="#">United Kingdom<img class="flag" src="images/uk.png" alt="" /><span class="value">UK</span></a></li>
+				                <li><a href="#">United States<img class="flag" src="images/us.png" alt="" /><span class="value">US</span></a></li>
+				            </ul>
+				         </dd>
+	   				  </dl>
+   				</div>
+			</div>
+		</div>
+
+</body>	
+	<script>
+		$(document).ready(function(){
+			getProductos()
+		});
+	//AJAX
+			getProductos = () => {
+				$.ajax({
+				url: `${"https://5000-acevedoseba-apilista-2plu1qgsx1o.ws-us51.gitpod.io/"}/productos`,
+				type: 'GET',
+				dataType: 'json',
+				success: function(data) {
+					$.each(data, function(index, value) {
+
+					 //html += '<option value="' + value.id + '">' + value.nombre + '</option>';
+
+					 addCardProducto(value.id, value.codigo, value.nombre, value.valor_venta, value.stock, value.descripcion, value.imagen);
+
+			        });
+
+      	        }
+    	    });
+
+		}
+
+		addCardProducto=(id, codigo, nombre, valor_venta, stock, descripcion, imagen, estado, descuento = 1) => {
+			var produc =   `<div class="col-md-3 shop_box"><a href="single.html">
+								<img src="${url_imagen}" class="img-responsive" alt=""/>
+								<span class="new-box">
+									<span class="new-label">Nuevo</span>
+								</span> 
+								<div class="shop_desc">
+									<h3><a href="#">${nombre}</a></h3>
+									<p>${descripcion}</p>
+									<span class="actual">$${valor_venta}</span><br>
+									<div class="d-flex justify-content-center align-items-center">
+										<h3 class="m-0 mr-3 font-weight-normal carrito_cantidad"> 0 </h3>
+										<input name="id_producto" type="hidden" value="${id}">
+										<div class="buttons">
+											<button class="btn btn-sm btn-border btn-round carrito_quitar"> - </button>
+											<button class="btn btn-sm btn-border btn-round carrito_anadir"> + </button>
+										</div>
+									</div>
+								</div>
+							</a></div>`;
+			$(".id_items").append(produc);
+		}
+		$(document).on('click', '.carrito_anadir', function(){
+			var cantidad = $(this).parent().parent().find('.carrito_cantidad').text();
+   			cantidad = parseInt(cantidad) + 1;
+    		$(this).parent().parent().find('.carrito_cantidad').text(cantidad);
+    
+    		var id_producto = $(this).parent().parent().find('input[name="id_producto"]').val();
+		});
+   		 //ajax consultar producto
+		$.ajax({
+      		url: `${"https://5000-acevedoseba-apilista-2plu1qgsx1o.ws-us51.gitpod.io/"}/productos/${id_producto}`,
+      		type: 'GET',
+      		dataType: 'json',
+      		success: function(data) {
+        		console.log(data);
+       		 //var valor_venta_final = data.valor_venta - data.valor_venta * (data.descuento/100);
+        	//$(this).parent().parent().find('.valor_venta_final').text(valor_venta_final);
+     		 }
+    	});
+
+		console.log(valor_venta_final);
+		var fila = `<tr>
+						<td>
+							<div class="img-container">
+								<img src="${url_imagen}" alt="...">
+							</div>
+						</td>
+						<td class="td-name">
+							<a href="#">${nombre}</a>
+						</td>
+						<td class="td-number">
+							$<span id="total">${valor_venta}</span>
+						</td>
+						<td class="td-number">
+							1
+							<div class="btn-group">
+								<button class="btn btn-info btn-sm"> <i class="nc-icon nc-simple-delete"></i> </button>
+								<button class="btn btn-info btn-sm"> <i class="nc-icon nc-simple-add"></i> </button>
+							</div>
+						</td>
+						<td class="td-number">
+							$<span id="total">7890</span>
+						</td>
+						<td class="td-actions">
+							<button type="button" rel="tooltip" data-placement="left" title="Remove item" id="boton-vaciar" class="btn btn-round btn-icon btn-neutral">
+								<i class="nc-icon nc-simple-remove"></i>
+							</button>
+						</td>
+					</tr>`;
+		$("#carrito_compras").append(fila);
+
+		$(document).on('click', '.carrito_quitar', function() {
+    		var cantidad = $(this).parent().parent().find('.carrito_cantidad').text();
+    		//no disminuir si es 0
+    		if (cantidad > 0) {
+     			 cantidad = parseInt(cantidad) - 1;
+      			$(this).parent().parent().find('.carrito_cantidad').text(cantidad);
+   			 }
+ 		 });
+	</script>
+</html>
